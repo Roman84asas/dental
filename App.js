@@ -1,19 +1,35 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import styled from 'styled-components/native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hi guy</Text>
-    </View>
+    <Container>
+      <Group>
+          <GroupTitle>11 сентября</GroupTitle>
+          <GroupItem>
+              <Avatar />
+          </GroupItem>
+      </Group>
+    </Container>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#dbe7ff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const Avatar = styled.View`
+    border-radius: 50px;
+`;
+
+const GroupItem = styled.View``;
+
+const GroupTitle = styled.Text`
+    font-weight: 800;
+    font-size: 22px;
+    color: #000000;
+`;
+
+const Group = styled.View``;
+
+const Container = styled.View`
+    flex: 1;
+    margin-top: 50px;
+`;
