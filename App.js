@@ -16,7 +16,6 @@ export default function App() {
 }
 
 const Avatar = styled.View`
-    border-radius: 50px;
 `;
 
 const GroupItem = styled.View``;
